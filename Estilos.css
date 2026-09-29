@@ -391,7 +391,7 @@ html, body {
 .Pauselvl3:hover { background: cyan; color: black; box-shadow: 0 0 15px cyan;}
 .Mensaje_Pauselvl3{ font-size: 35px; color: cyan; text-shadow: 0 0 20px cyan; font-family: 'Press Start 2P', cursive; text-align: center; }
 
-/* RESPONSIVE */
+/* RESPONSIV */
 @media (max-width: 1196px){
     .Imgane_metiorito{width: 47%; top: 16vw;}
     .Boton_preparado{width: 38%;}
