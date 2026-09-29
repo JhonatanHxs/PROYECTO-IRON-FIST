@@ -1,0 +1,10 @@
+Puntos dentro del juego :  
+
+Ponerle estilos a la alerta
+Boton siguiente
+Los creditos del final
+Desarrollar una sorpresa al final
+Agregar efectos de sonido
+Darle nombre al juego
+colocarle una historia
+
