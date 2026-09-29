@@ -40,39 +40,44 @@
 </section>
 <!--SECCION - 3 ------------------------------------------------------------------------------------------------------->
 
-<section  id="Reglas">
-    <h1 class="Titulo_Reglas">Antes de empezar lee,<br><br> las reglas.</h1>
-    <img src="IMG/JUEGO.jpg"  class="Img_reglas">
-    <div class="Reglas_estilos" id="R1">
-        <h3>REGLA : 1</h3>
-        <p>Lo que se encuentra señalado son los puntos, que segun tu progreso, se irán incrementando al desviar 
-            meteoritos de la tierra (Esto al pasar el cursor sobre el meteorito que se acerca), si los puntos obtenidos
-            llegan a 30, es una victoria automática, pero recuerda que los meteoritos son impredecibles en su ataque así que
-            tienes que estar atento a su llegada
-        </p>
+<section id="Reglas">
+    <h1 class="Titulo_Reglas">LEE LAS REGLAS ANTES DE JUGAR</h1>
+    
+    <div class="Reglas_Grid">
+        <!-- Regla 1 (Arriba Izquierda) -->
+        <div class="Regla_Card">
+            <h3>REGLA 1: PUNTAJE</h3>
+            <p>Pasa el cursor sobre los meteoritos que se aproximan para desviarlos. Cada meteorito interceptado suma puntos a tu marcador.</p>
+        </div>
+
+        <!-- Regla 2 (Arriba Derecha) -->
+        <div class="Regla_Card">
+            <h3>REGLA 2: TIEMPO LÍMITE</h3>
+            <p>Tienes un límite de tiempo por nivel. Debes alcanzar la puntuación requerida antes de que el contador llegue a cero para evitar la derrota.</p>
+        </div>
+
+        <!-- IMAGEN DE REFERENCIA (Centro) -->
+        <div class="Contenedor_Img_Centro">
+            <img src="IMG/JUEGO.jpg" alt="Referencia del juego" class="Img_Reglas_Centro">
+        </div>
+
+        <!-- Regla 3 (Abajo Izquierda) -->
+        <div class="Regla_Card">
+            <h3>REGLA 3: VELOCIDAD Y AMENAZAS</h3>
+            <p>Los meteoritos aumentan su cantidad e impredecibilidad según la dificultad del nivel. Mantén tus reflejos atentos en todo momento.</p>
+        </div>
+
+        <!-- Regla 4 (Abajo Derecha) -->
+        <div class="Regla_Card">
+            <h3>REGLA 4: LÍNEA DE DEFENSA</h3>
+            <p>Evita a toda costa que los meteoritos crucen la línea punteada de límite. Si alguno la supera, la Tierra sufrirá un daño irreparable (GAME OVER).</p>
+        </div>
     </div>
 
-
-    <div class="Reglas_estilos" id="R2">
-        <h3>REGLA : 2</h3>
-        <p>El tiempo que se señala es el límite máximo que puede aguantar la defensa, siendo unos 60 segundos, en los que
-            el jugador debe cumplir el límite de puntos o sera un GAMER OVER automático, asi que recuerda ser rápido recolectando
-            puntos.
-        </p>
+    <!-- Botón Circular Centrado -->
+    <div class="Boton_Listo_Circular" onclick="Mover_2()">
+        <span>¿ESTÁS LISTO?</span>
     </div>
-
-
-    <div class="Reglas_estilos" id="R3_4">
-        <h3>REGLA : 3 y 4</h3>
-        <p>Estos son los meteoritos que debes evitar que ingresen a la tierra, por lo general suelen ser rápidos así que 
-            recuerda: no te descuides o confies por que en el momento que lo hagas, estos llegarán a la tierra, es por ello
-            que una raya señala el límite por el cual ya es inevitable nuestra salvación (GAME OVER)
-        </p>
-    </div>
-
-<div class="Listo" onclick="Mover_2()">¿Estas listo?</div>
-
-
 </section>
 
 
