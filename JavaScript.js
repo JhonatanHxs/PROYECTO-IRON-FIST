@@ -273,6 +273,9 @@ function JUEGO(){
 
             //ESTA FUNCION CONTIENE EL REANUDE Y PAUSE DEL BOTON
             function DETENER_JUEGO (){
+                if (juegoTerminado) {
+                    return; 
+                }
                 //INDICA QUE LA FUNCION DE PAUSE SE EJECUTARA UNA VEZ SE DE CLICK AL BOTON DE PAUSE        
                 document.getElementById("Pause").addEventListener('click', PAUSE)
                 //ESTA VARIABLE INDICA SI SE EJECUTA O NO EL DESPAUSEO
