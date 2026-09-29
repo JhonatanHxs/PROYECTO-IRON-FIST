@@ -1,11 +1,11 @@
 {
     "workbench.colorCustomizations": {
-        "statusBar.background": "#1572B6",
-        "statusBar.noFolderBackground": "#1572B6",
-        "statusBar.debuggingBackground": "#1572B6",
-        "titleBar.activeBackground": "#115b92",
-        "titleBar.inactiveBackground": "#115b92",
-        "statusBar.foreground": "#FFFFFF",
-        "titleBar.activeForeground": "#FFFFFF"
+        "statusBar.background": "#E34F26",
+        "statusBar.noFolderBackground": "#E34F26",
+        "statusBar.debuggingBackground": "#E34F26",
+        "titleBar.activeBackground": "#b63f1e",
+        "titleBar.inactiveBackground": "#b63f1e",
+        "statusBar.foreground": "#000000",
+        "titleBar.activeForeground": "#000000"
     }
 }
