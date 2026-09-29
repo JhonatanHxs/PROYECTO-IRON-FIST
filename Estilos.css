@@ -136,26 +136,133 @@ html, body {
 }
 
 /* --- REGLAS --- */
-#Reglas { position: relative; width: 100%; top: 120%; }
-.Titulo_Reglas { font-size: 2.4VW; position: relative; top: -20%; left: 2%; font-family: 'Press Start 2P', cursive; }
-.Img_reglas { margin-top: 1%; margin-left: 2%; width: 34%; }
-
-.Reglas_estilos {
-    background: rgba(248, 248, 248, 0.521); color: black; border: 0.19vw solid black; 
-    width: 40%; height: auto; position: absolute; left: 58%; font-size: 1.14vw;
+#Reglas {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 0;
+    top: 0 !important; /* Mantiene la posición relativa para centrar */
+    left: 0 !important;
+    box-sizing: border-box;
 }
 
-#R1 { top: -4%; }
-#R2 { top: 38%; }
-#R3_4 { top: 75%; }
-.Reglas_estilos h3, .Reglas_estilos p { margin-left: 3%; margin-right: 3%; text-align: center; } 
-
-.Listo {
-    width: 34%; height: 8vh; background: rgb(100, 21, 146); display: flex; 
-    align-items: center; justify-content: center; cursor: pointer; position: relative; 
-    left: 2%; top: 2vw; font-size: 1.5vw; font-family: 'Inconsolata', monospace;
+.Titulo_Reglas {
+    font-size: 2.2vw;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 2vw;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
+/* Grilla en formato X/Cruz: 2 Columnas de reglas con Imagen al Centro */
+.Reglas_Grid {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr;
+    gap: 1.5vw;
+    width: 90%;
+    max-width: 1100px;
+    margin-bottom: 2vw;
+    align-items: center;
+}
+
+/* Imagen Central de Referencia */
+.Contenedor_Img_Centro {
+    grid-column: 2;
+    grid-row: 1 / span 2; /* Ocupa la columna central en ambas filas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Img_Reglas_Centro {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border: 3px solid #00f0ff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Img_Reglas_Centro:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.8);
+}
+
+/* Tarjetas individuales de reglas */
+.Regla_Card {
+    background: rgba(20, 20, 35, 0.85);
+    color: #ffffff;
+    border: 2px solid #a855f7;
+    border-radius: 12px;
+    padding: 1.2vw;
+    box-shadow: 0px 4px 15px rgba(168, 85, 247, 0.3);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.Regla_Card:hover {
+    transform: translateY(-5px);
+    border-color: #00f0ff;
+    box-shadow: 0px 6px 20px rgba(0, 240, 255, 0.4);
+}
+
+.Regla_Card h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.85vw;
+    color: #00f0ff;
+    margin-top: 0;
+    margin-bottom: 0.8vw;
+    text-align: center;
+}
+
+.Regla_Card p {
+    font-family: sans-serif;
+    font-size: 0.85vw;
+    line-height: 1.4;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Botón Circular alineado y centrado */
+.Boton_Listo_Circular {
+    width: 7vw;
+    height: 7vw;
+    min-width: 90px;
+    min-height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7e22ce, #3b82f6);
+    border: 3px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(126, 34, 206, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; /* Garantiza el centrado horizontal */
+}
+
+.Boton_Listo_Circular:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 240, 255, 1);
+}
+
+.Boton_Listo_Circular span {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.65vw;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.3;
+    padding: 8px;
+    user-select: none;
+}
 /* --- SEGUNDA SECCIÓN (HISTORIA) --- */
 #Seccion_2 { position: relative; top: 10%; }
 .Titulo_historia {
