@@ -20,33 +20,119 @@ html, body {
 }
 
 /* --- PRIMERA SECCIÓN (INICIO) --- */
+/*PRIMERA SECCION------------------------------------------------------------------------------------------------------*/
 .Seccion_01 {
-    width: 100%; height: 100vh; overflow: hidden; 
-    position: relative; top: 0px; display: flex; 
-    flex-direction: column; align-items: center; justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Selector de Gráficos Superior */
 .Contenedor_RC {
-    width: 7vw; height: 3vw; border-radius: 3rem; background: transparent; 
-    border: 3px solid white; position: relative; left: 44%; top: 4%; cursor: pointer;
+    width: 5vw;
+    height: 2.4vw;
+    min-width: 60px;
+    min-height: 28px;
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #00f0ff;
+    position: absolute;
+    top: 25px;       /* Distancia desde la parte superior */
+    right: 30px;     /* Posicionado en la esquina derecha */
+    left: auto;      /* Elimina cualquier centrado previo */
+    transform: none; /* Elimina transformaciones previas */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 100;    /* Asegura que siempre quede visible sobre otros elementos */
 }
+
+.Contenedor_RC:hover {
+    border-color: #a855f7;
+    box-shadow: 0 0 18px rgba(168, 85, 247, 0.8);
+}
+
 .Recursos {
-    width: 40%; height: 100%; border-radius: 50%; background: white; margin-left: 0%; transition: 1s;
+    width: 40%;
+    height: 100%;
+    border-radius: 50%;
+    background: #00f0ff;
+    margin-left: 0%;
+    transition: margin-left 0.4s ease, background 0.4s ease;
+    box-shadow: 0 0 8px #00f0ff;
 }
 
-.Texto_Principal, .Nombre {
-    font-family: 'Press Start 2P', cursive; text-align: center;
-    text-shadow: 0 0 5px currentColor, 0 0 10px currentColor; /* NEÓN RETRO */
+/* Título Principal "IRON FIST" */
+.Nombre {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 5vw;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.8), 0 0 40px rgba(0, 240, 255, 0.5);
+    letter-spacing: 2px;
 }
 
-.Texto_Principal { font-size: 3.8vw; position: relative; top: -12%; }
-.Nombre { font-size: 5.9vw; position: relative; top: 0%; padding-bottom: 0%; }
+/* Subtítulo */
+.Texto_Principal {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 2.2vw;
+    color: #00f0ff;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+    line-height: 1.4;
+    text-shadow: 0 0 12px rgba(0, 240, 255, 0.6);
+}
 
-.Boton {
-    width: 20vw; height: 4vw; background: rgb(144, 90, 196); 
-    cursor: pointer; font-family: 'Press Start 2P', cursive;
-    color: white; border-radius: 2px; border: none;
-    margin: -3% auto auto auto; 
+/* Botón Circular "JUGAR" con Sombra Neón */
+.Boton_Jugar_Circular {
+    width: 9vw;
+    height: 9vw;
+    min-width: 110px;
+    min-height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #9333ea, #2563eb);
+    border: 3px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* Sombra profunda y resplandor neón */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6), 
+                0 0 30px rgba(147, 51, 234, 0.8),
+                inset 0 0 15px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                box-shadow 0.3s ease, 
+                background 0.3s ease;
+}
+
+.Boton_Jugar_Circular:hover {
+    transform: scale(1.12);
+    background: linear-gradient(135deg, #a855f7, #00f0ff);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8), 
+                0 0 45px rgba(0, 240, 255, 1),
+                inset 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.Boton_Jugar_Circular:active {
+    transform: scale(0.95);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 240, 255, 0.8);
+}
+
+.Boton_Jugar_Circular span {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.1vw;
+    color: #ffffff;
+    text-align: center;
+    user-select: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* --- REGLAS --- */
