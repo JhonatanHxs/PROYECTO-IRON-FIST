@@ -175,4 +175,4 @@ function DETENER_JUEGOlvl2() {
         }
         ActivoLvl2 = !ActivoLvl2;
     });
-}
+}}
