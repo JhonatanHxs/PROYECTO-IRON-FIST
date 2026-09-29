@@ -236,6 +236,14 @@ function JUEGO(){
             
             //ESTA FUNCION EJECUTA UN CONJUNTO DE ACCIONES AL PRESIONAR JUGAR
             function PLAY(){
+                // Capturas el elemento de audio
+                var musicaFondo = document.getElementById("Fondo_Ciberpunk");
+
+                // Ajustas el volumen (0.2 equivale al 20% de volumen)
+                musicaFondo.volume = 0.02; 
+
+                // Inicias la reproducción
+                musicaFondo.play();
                 document.getElementById("Fondo_Ciberpunk").play()
                 //MUEVE EL TITULO FUERA DEL CONTENEDOR UNA VEZ DE CLICK A JUGAR
                 document.getElementById("Texo").style.left = "-900px" 
