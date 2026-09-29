@@ -19,7 +19,7 @@ Swal.fire({
 
 
 Tiempo = 71 //VARIBLE DE INICIO TIEMPO
-Puntaje = 0 //VARIABLE DE INICIO PUNTO
+Puntaje = 0 //VARIABLE DE INICIO PUNTOS
 
 
 
